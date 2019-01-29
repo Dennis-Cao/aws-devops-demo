@@ -1,0 +1,61 @@
+
+- name: Create an Amazon Linux 2 EC2 instance
+  ec2:
+    aws_access_key: "{{ec2_access_key}}"
+    aws_secret_key: "{{ec2_secret_key}}"
+    image: "{{amazon_linux2_ami}}"
+    instance_type: t2.micro
+    wait: yes
+    count: 1
+    region: us-west-2
+    key_name: test
+  tags: amazon-linux-2
+
+- name: Create an Amazon Linux EC2 instance
+  ec2:
+    aws_access_key: "{{ec2_access_key}}"
+    aws_secret_key: "{{ec2_secret_key}}"
+    image: "{{amazon_linux_ami}}"
+    instance_type: t2.micro
+    wait: yes
+    count: 1
+    region: us-west-2
+    key_name: test
+  tags: amazon-linux
+
+- name: Create a SUSE Linux EC2 instance
+  ec2:
+    aws_access_key: "{{ec2_access_key}}"
+    aws_secret_key: "{{ec2_secret_key}}"
+    image: "{{suse_linux_ami}}"
+    instance_type: t2.micro
+    wait: yes
+    count: 1
+    region: us-west-2
+    key_name: test
+  tags: suse
+
+- name: Create an Redhat EC2 instance
+  ec2:
+    aws_access_key: "{{ec2_access_key}}"
+    aws_secret_key: "{{ec2_secret_key}}"
+    image: "{{redhat_ami}}"
+    instance_type: t2.micro
+    wait: yes
+    count: 1
+    region: us-west-2
+    key_name: test
+  tags: redhat
+  
+- name: Create an Ubuntu 18.04 EC2 instance
+  ec2:
+    aws_access_key: "{{ec2_access_key}}"
+    aws_secret_key: "{{ec2_secret_key}}"
+    image: "{{ubuntu_1804_ami}}"
+    instance_type: t2.micro
+    wait: yes
+    count: 1
+    region: us-west-2
+    key_name: test
+  tags: ubuntu-1804
+  

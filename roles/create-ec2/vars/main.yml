@@ -1,0 +1,5 @@
+amazon_linux2_ami: ami-032509850cf9ee54e
+amazon_linux_ami: ami-01e24be29428c15b2
+suse_linux_ami: ami-0de02b68de6f5f732
+redhat_ami: ami-036affea69a1101c9
+ubuntu_1804_ami: ami-0bbe6b35405ecebdb
