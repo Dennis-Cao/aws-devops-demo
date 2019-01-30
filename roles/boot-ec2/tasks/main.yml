@@ -1,0 +1,9 @@
+- name: Boot EC2 instance
+  ec2:
+    aws_access_key: "{{ec2_access_key}}"
+    aws_secret_key: "{{ec2_secret_key}}"
+    instance_ids: "{{instance_id}}"
+    state: running
+    region: "{{ec2_region}}"
+    wait: true
+  delegate_to: 127.0.0.1
