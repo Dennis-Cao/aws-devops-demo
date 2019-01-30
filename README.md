@@ -15,6 +15,8 @@ Replace with your own encrypted keys if you wish to test out the playbooks in th
     - ubuntu-1804
 - shutdown-ec2: Shutsdown an existing EC2 instance
 - download-s3: Downloads a pdf file from an S3 Bucket
+- store-lambda-function-s3: (Unneccessarily) copies lambda function to EC2 instance, which then gets uploaded to S3
+- 
 
 
 # TASKS DEMOS
