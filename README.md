@@ -15,8 +15,8 @@ Replace with your own encrypted keys if you wish to test out the playbooks in th
     - ubuntu-1804
 - shutdown-ec2: Shutsdown an existing EC2 instance
 - download-s3: Downloads a pdf file from an S3 Bucket
-- store-lambda-function-s3: (Unneccessarily) copies lambda function to EC2 instance, which then gets uploaded to S3
-- 
+- store-lambda-function-s3: (Unneccessarily) copies lambda function to EC2 instance, which then gets uploaded to S3. Demonstrates file upload capability to S3.
+- create-lambda-function: Creates a lambda function using a zip file. Zip file (lambda_test.zip) has to be located in the directory from which you are launching your ansible playbook.
 
 
 # TASKS DEMOS
